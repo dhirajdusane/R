@@ -1,0 +1,46 @@
+tempData <- c(1:100)
+save(tempData, file = "a.RData")
+load("a.RData")
+
+#str: compactly displays structure
+str(tempData)
+
+#summary: Min,1Q,Median,Mean,3Q,Max
+summary(tempData)
+
+mean(tempData)
+median(tempData)
+#gives Min,Max
+range(tempData)
+
+
+#lagged and iterated differences
+diff(tempData)
+
+#table: of counts at each factor level
+table(tempData)
+
+#prop.Table: gives x/sum(x)
+prop.Table(tempData)
+
+#round
+round(5.6)
+
+#dist: computs distance matrix
+dist(tempData)
+
+#The apply() family pertains to the R base package and is populated with functions to manipulate slices of data from
+#matrices, arrays, lists and dataframes in a repetitive way
+#apply: apply function on structured data[ Matrix,dataframe]
+#lapply:You want to apply a given function to every element of a list and obtain a list as result
+#tapply:
+#sapply
+
+
+#mod in R %%
+5%%2 
+ans: 1
+
+5%in%tempData
+ans:TRUE
+
